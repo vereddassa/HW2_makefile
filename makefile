@@ -8,7 +8,7 @@ RM = rm -rf *.o *.exe
 
 ###### Rules #######
 
-all: $(OBJS)
+$(EXEC): $(OBJS)
 	$(CCLINK) $(OBJS) -o $(EXEC)
 
 #Short syntax - make performs $(CC) $(CFLAGS) -c TARGET.c by default
